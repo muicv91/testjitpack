@@ -38,14 +38,3 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
-//project.afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                artifactId = 'muicv'
-//                version = '1.0'
-//
-//            }
-//        }
-//    }
-//}
