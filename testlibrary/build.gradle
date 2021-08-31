@@ -40,8 +40,9 @@ dependencies {
 project.afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
-                artifactId = 'testlibrary'
+            mavenAar(MavenPublication) {
+                artifactId "$project.name"
+                from components.release
             }
         }
     }
