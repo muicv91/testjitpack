@@ -47,7 +47,7 @@ project.afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                artifactId = 'app'
+                artifactId = 'testjitpack'
             }
         }
     }
