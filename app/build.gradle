@@ -7,7 +7,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.muicv.testjitpack"
+        applicationId "com.test"
         minSdk 21
         targetSdk 30
         versionCode 1
@@ -17,8 +17,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -39,7 +45,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 //    implementation 'com.github.muicv91:MuicvModule::v1.0.9'
-    implementation 'com.github.muicv91:MuicvModule:v1.0.11'
+//    implementation 'com.github.muicv91:MuicvModule:v1.0.11'
+
+
+    implementation 'com.github.muicv91.MuicvModule:DownloadPopup:v1.0.15'
 
 }
 
